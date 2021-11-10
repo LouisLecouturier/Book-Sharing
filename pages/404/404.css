@@ -1,0 +1,44 @@
+.body {
+  background-color: white;
+}
+.img {
+  width: 390px;
+  object-fit: cover;
+}
+.lien {
+  margin-top: 90px;
+  margin-left: 30px;
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: #ffb412;
+  width: 95%;
+  height: 45%;
+  line-height: 45px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.h1 {
+  font-size: 200px;
+  margin: 0px;
+  font-family: "Karla", arial;
+}
+.h2 {
+  font-size: 50px;
+  margin: 0px;
+  font-family: "Karla", arial;
+}
+
+.colonne {
+  margin-top: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
