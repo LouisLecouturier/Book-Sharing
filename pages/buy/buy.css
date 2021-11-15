@@ -1,0 +1,220 @@
+.action-selector {
+  position: relative;
+  display: flex;
+  background-color: #eaeaea;
+  overflow: hidden;
+  width: fit-content;
+  margin: 120px auto 80px auto;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.action-selector input {
+  display: none;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: 160px;
+  height: 56px;
+  font-size: 1.15em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected {
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+  width: 160px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  background-color: #ffb412;
+  transition: all 0.3s ease-in-out;
+}
+
+.rent-selected {
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.searchBar {
+  display: flex;
+  height: 48px;
+  width: 33%;
+  margin: 0 auto 80px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid #ececec;
+
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar * {
+  outline: none;
+  border: 0;
+  border-right: 2px solid #ffb412;
+}
+
+.searchBar select:last-child {
+  border: 0;
+}
+
+.bookType,
+.collection,
+.year {
+  flex: 1;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 1.05em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 65%;
+  margin: auto;
+}
+
+.book {
+  position: relative;
+  width: 296px;
+  height: 504px;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+
+.book::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 25%;
+  background-color: #dadada;
+  transition: all 0.2s ease-in-out;
+  border-radius: 100px;
+}
+.book:hover::after {
+  transform: translateX(-50%) scaleX(150%);
+  background-color: #ffb412;
+  transition: all 0.2s ease-in-out;
+}
+
+.book-image {
+  border-radius: 35px;
+  width: 296px;
+
+  height: 296px;
+  object-fit: cover;
+}
+
+.book-body {
+  margin-top: 16px;
+}
+
+.book-title {
+  font-weight: 800;
+  width: fit-content;
+  cursor: pointer;
+}
+.book-info {
+  padding-top: 16px;
+  color: #8f8f8f;
+}
+
+.book-info h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.book-body * {
+  margin: 0;
+}
+
+.book-buttons {
+  width: 100%;
+  margin: 16px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.book-buttons svg {
+  width: 32px;
+  height: 32px;
+}
+
+.add-to-cart {
+  background-color: #ffb412;
+  margin-right: 8px;
+}
+
+.add-to-cart:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: hsl(41, 100%, 47%);
+}
+.cart-icon {
+  color: #fff;
+}
+.add-to-cart:hover .cart-icon {
+  animation: cart 0.7s forwards ease-in-out;
+}
+
+@keyframes cart {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-16deg) translateX(-2px);
+  }
+  50% {
+    transform: rotate(16deg) translateX(2px);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.see {
+  color: #33323d;
+  border: 3px solid #33323d;
+  box-sizing: border-box;
+}
+
+.see:hover {
+  background-color: #33323d;
+  color: #fff;
+}
+
+.see:hover svg {
+  animation: arrow 0.5s forwards ease-in-out;
+}
