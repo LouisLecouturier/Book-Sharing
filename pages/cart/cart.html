@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <title>Panier</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a class="logo" href="../index.html">Bele</a>
+      <nav class="headerNav">
+        <a href="../index.html" class="link">Accueil</a>
+        <a href="../book.html" class="link">Vente/Location</a>
+        <a href="../sell.html" class="link">Revente</a>
+      </nav>
+      <a class="cart" href="../cart/cart.html">
+        <img src="../../images/icons/cart.svg" />
+      </a>
+
+      <div class="mobile">
+        <label for="toggleNav" class="hamburger">
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+        </label>
+        <input type="checkbox" id="toggleNav" />
+        <nav class="mobileNav">
+          <a href="../index.html" class="link">Accueil</a>
+          <a href="../book.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+      </div>
+    </header>
+    <!--___________________________-Main_______________________________-->
+    <main class="page">
+      <div class="container">
+        <h1>Votre panier :</h1>
+        <hr />
+        <ul>
+          <li class="cart-element">
+            <span class="cart-index">1.</span>
+            <div class="product">
+              <div class="product-left">
+                <img class="image" src="../../images/books/book1.jpg" alt="" />
+                <div class="book">
+                  <div class="bookInfo">
+                    <h2>200% TOEIC</h2>
+                    <h4>Auteur</h4>
+                  </div>
+                  <div>Edition 2020</div>
+                </div>
+              </div>
+              <div class="product-right">
+                <span class="price">32€</span>
+                <div class="delete">
+                  <img src="../../images/icons/delete.svg" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cart-element">
+            <span class="cart-index">2.</span>
+            <div class="product">
+              <div class="product-left">
+                <img class="image" src="../../images/books/book2.jpg" alt="" />
+                <div class="book">
+                  <div class="bookInfo">
+                    <h2>Les 48 Lois du pouvoir</h2>
+                    <h4>Auteur</h4>
+                  </div>
+                  <div>Edition 2020</div>
+                </div>
+              </div>
+              <div class="product-right">
+                <span class="price">16€</span>
+                <div class="delete">
+                  <img src="../../images/icons/delete.svg" />
+                </div>
+              </div>
+            </div>
+          </li>
+          <div class="total">
+            <h4> Sous-total : </h4>
+            <h2> 48€ </h2>
+            <div class="cart-bottom">
+              <a class ="button_buy" href="/pages/cart/info_client.html">Commander</a>
+            </div>
+          </div>
+        </ul>
+        <div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

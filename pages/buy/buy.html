@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="buy.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <title>Achat/Location</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a class="logo" href="../index.html">Bele</a>
+      <nav class="headerNav">
+        <a href="../index.html" class="link">Accueil</a>
+        <a href="../book.html" class="link">Vente/Location</a>
+        <a href="../sell.html" class="link">Revente</a>
+      </nav>
+      <a class="cart" href="../cart/cart.html">
+        <img src="../../images/icons/cart.svg" />
+      </a>
+
+      <div class="mobile">
+        <label for="toggleNav" class="hamburger">
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+        </label>
+        <input type="checkbox" id="toggleNav" />
+        <nav class="mobileNav">
+          <a href="../index.html" class="link">Accueil</a>
+          <a href="../book.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page container">
+      <div class="action-selector">
+        <label class="selector" for="rent">Achat </label>
+        <label class="selector" for="rent">Location </label>
+        <input
+          id="rent"
+          type="checkbox"
+          class="selector-input"
+          value="rent"
+          name="action"
+        />
+        <div id="action-selected" class="selected"></div>
+      </div>
+
+      <div class="searchBar">
+        <input
+          class="bookType"
+          name="bookType"
+          placeholder="Type de livre"
+          type="text"
+        />
+        <select class="collection" name="collection">
+          <option selected disabled>Collection</option>
+          <option>Toutes</option>
+          <option>Test 1</option>
+          <option>Test 2</option>
+          <option>Test 3</option>
+          <option>Test 4</option>
+        </select>
+        <select class="year" name="year">
+          <option selected disabled>Année</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+        </select>
+      </div>
+
+      <div class="product-grid">
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 1</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 2</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 1</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 2</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 1</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="book-image" src="https://source.unsplash.com/random" />
+          <div class="book-body">
+            <h2 class="book-title">Livre 2</h2>
+            <div class="book-info">
+              <h4>Collection</h4>
+              <h4>Année</h4>
+            </div>
+          </div>
+          <div class="book-buttons">
+            <a class="add-to-cart" href="../cart/cart.html">
+              <svg
+                class="cart-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="see">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.75 11.7257L4.75 11.7257"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script>
+      let rent = document.getElementById("rent");
+      let actionSelected = document.getElementById("action-selected");
+
+      rent.addEventListener("change", (e) => {
+        if (rent.checked) {
+          actionSelected.classList.add("rent-selected");
+        } else {
+          actionSelected.classList.remove("rent-selected");
+        }
+      });
+    </script>
+  </body>
+</html>

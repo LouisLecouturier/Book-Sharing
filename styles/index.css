@@ -109,12 +109,8 @@ p {
 }
 
 .separator {
-  height: 4px;
-  border: 0;
-  width: 50%;
   margin: 80px auto;
-  border-radius: 100px;
-  background-color: #f6ae2c;
+  width: 50%;
 }
 
 .founderRow {

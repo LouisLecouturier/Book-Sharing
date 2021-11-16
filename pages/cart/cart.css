@@ -1,0 +1,127 @@
+.container {
+  width: 64%;
+  padding: 40px 0;
+  margin: auto;
+}
+
+.container h1 {
+  font-weight: 800;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.cart-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-index {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #bcbcbc;
+  margin: 0 40px 0 16px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 16px 0;
+
+  border-bottom: 3px solid #bcbcbc;
+}
+
+.product-right,
+.product-left {
+  display: flex;
+}
+
+.product-right .price {
+  align-self: flex-start;
+  margin-right: 16px;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+.product .image {
+  height: 112px;
+  border-radius: 5px;
+}
+
+.bookInfo h2,
+.bookInfo h4 {
+  margin: 0;
+}
+
+.book {
+  display: flex;
+  padding: 8px 0;
+  margin-left: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete {
+  margin-right: 32px;
+}
+
+.delete img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+
+.cart-bottom {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.button_buy{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 64px;
+  margin-top: 20px;
+  margin-right: -80px;
+  border-radius: 20px;
+  background-color: #f6ae2c;
+  font-size: x-large;
+  font-family: "Karla";
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button_buy:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #f0a400;
+}
+
+.total{
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+
+}
+.total>h4{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+
+
+.total>h2{
+  margin-right: -10px;
+  font-size: 2em;
+  font-weight: 600;
+}
