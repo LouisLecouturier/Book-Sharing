@@ -9,9 +9,10 @@
   margin-top: 50px;
   margin-left: 30px;
   margin-bottom: 20px;
-  border: 2px solid black;
-  border-radius: 100px;
+  border-radius: 20px;
   background-color: #ffb412;
+  font-weight: 600;
+  color: #fff;
   width: 20%;
   height: 45%;
   line-height: 45px;
