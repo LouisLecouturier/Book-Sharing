@@ -1,0 +1,171 @@
+.premier{
+    margin-left: 12.5%;
+    margin-top: 50px; 
+}
+
+.Titre1{
+
+    position: relative;
+    width: fit-content;
+    padding-bottom: 4px;
+}
+
+main{
+    width: 75%;
+    margin: 80px auto;
+}
+
+.Titre1::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: #f6ae2C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+}
+
+.Titre2{             
+    position: relative;   
+    width: fit-content;     
+}
+
+.Titre2::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: #f6ae2C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+}
+
+.ER{
+    font-size: 1.2em;
+    font-weight: 800;
+    display: flex;
+    position: absolute; 
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    
+}
+
+.Don{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    
+}
+
+
+
+.montant{
+    width: 82%;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.carte input {
+    border-radius: 10px;
+    border:  0;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+}
+
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    border-radius: 10px;
+    border:  0;
+    
+}
+
+.Numéro_carte{
+    width: 97%;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    border:  0;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+}
+
+.NOM{
+    width: 82%;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    border:  0;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+    margin-right: 8px;
+}
+
+.Expiration{
+    width: 82%;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    border:  0;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+    margin-left: 8px;
+}
+
+.CVC{
+    width: 20%;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0; 
+    border-radius: 10px;
+    border:  0;
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+}
+
+.card-row2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px; 
+}
+
+.bouton{
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #ffb412;
+  font-weight: 600;
+  color: #fff;
+  width: 20%;
+  height: 45%;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.DON{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; 
+}
