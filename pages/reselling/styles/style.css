@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+  /*_________________________________header______________________*/
+
+body {
+  font-family: "Rubik";
+  padding: 0;
+  margin: 0;
+  color: #33323d;
+  background-image: linear-gradient(115deg ,#f8f8f8, white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100px;
+}
+
+.formulaire {
+  border: #a8a8a8;
+  box-shadow:0 8px 10px rgba(90, 90, 90, 0.1);
+  border-radius: 5px;
+  border: 2px solid;
+  display: flex;
+  width: fit-content;
+  margin : 0 auto;
+
+}
+
+
+.button{
+  margin: 0 auto;
+}
+
+/*________________________________formulaire ______________________________*/
+.left_band{
+  width: 250px;
+  margin-top: 10px;
+  margin-right: -100px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.left_band>a{
+  
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  width:20px;
+  color:#78788c;
+  border-bottom:3px solid #78788c
+  
+}
+
+.left_band>a:hover{
+  transition: all 0.2s ease-in-out;
+  background-color:#f6ae2c;
+}
+
+.bandeau{
+  height:1100px;
+  margin-top: -200px;
+  margin-bottom: 50px;
+  background:#ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width:120vw;
+  padding:20px 30px;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.205);
+   
+}
+
+.form{
+  margin:calc(10vh - 220px) auto; 
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  margin-top: 2%;
+  width: 65%;
+  font-family:'Rubik', 'Montserrat',sans-serif;
+  position:relative;
+  box-sizing: content-box ;
+}
+
+h2{margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#78788c;
+  border-bottom:3px solid #78788c
+}
+
+input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family: 'Rubik', 'Montserrat',sans-serif;
+  transition:all .3s;border-bottom:2px solid #bebed2
+}
+
+.resell_button{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button_forms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 64px;
+  /* margin-top: 20px;
+  margin-right: -80px; */
+  border-radius: 20px;
+  background-color: #f6ae2c;
+  font-size: x-large;
+  font-family: "Karla";
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.button_forms:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #f0a400;
+}
+
+.bottom{
+  margin:auto calc(10vh - 220px); 
+}
+
+.steps{
+  margin-top: 200px;
+  margin-left:calc(10vw + 170px);
+  width: 30%;
+}
+
+.steps>h2{
+  width: 100%;
+  border-bottom:3px solid #78788c
+}
+
+p{
+  font-family:"Rubik";
+}
+
+.footer{
+  justify-content: center;
+  margin: 0 auto;
+}

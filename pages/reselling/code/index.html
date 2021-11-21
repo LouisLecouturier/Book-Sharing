@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <title>Revente</title>
+  </head>
+  <body>
+<!--___________________________header_____________________________-->
+    <header class="header">
+      <a class="logo" href="../index.html">Bele</a>
+      <nav class="headerNav">
+        <a href="../index.html" class="link">Accueil</a>
+        <a href="../book.html" class="link">Vente/Location</a>
+        <a href="../sell.html" class="link">Revente</a>
+      </nav>
+      <a class="cart" href="../cart/cart.html">
+        <img src="../images/icons/cart.svg" />
+      </a>
+
+      <div class="mobile">
+        <label for="toggleNav" class="hamburger">
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+        </label>
+        <input type="checkbox" id="toggleNav" />
+        <nav class="mobileNav">
+          <a href="../index.html" class="link">Accueil</a>
+          <a href="../book.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--___________________main body_______________________________-->
+    <div class = "corp">
+      <div class="left_band">
+        <a href="#form" class = "link">Informations du livre</a>
+        <a href="#calender" class = "link">C  réneaux disponibles</a>
+        <a href="#info" class = "link">Démarches et Infos</a>
+      </div>
+      <br/>
+
+        <div class = "bandeau">
+          <form class = "form">
+            <h2>Votre livre</h2>
+                <label for="name:">Nom du livre</label><br>
+                <p type="name:"><input placeholder="les contemplations"></p>
+                
+                <label for="author">Auteur du livre</label><br>
+                <p type="author"><input placeholder="Victor Hugo"></p>
+
+                <label for="editor">Nom de l'éditeur</label><br>
+                <p type="editor"><input placeholder="Belin-Galimard"></p>
+
+                <label for="year">Année de parution</label><br>
+                <p type="year"><input type="number" placeholder="1856" maxlength="4"></p>  
+          </form>
+            
+      <div class="bottom">
+        <div class="steps">
+          <h2>Les démarches d'envoie et de paiement</h2>
+          <p>démarche ici<br>et ici aussi</p>
+        </div>
+
+        <div class="resell_button">
+          <button class="button_forms"type="submit">Vendre mon livre</button>
+        </div>
+      </div>
+        
+      </div>  
+    </div>
+
+    <!--_______footer____________-->
+      
+    <div class="footer">
+        <h2>mentions légales</h2>
+      </div>
+      
+
+  </body>
+</html>
