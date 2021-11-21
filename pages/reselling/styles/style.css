@@ -32,36 +32,46 @@ a {
   margin: 0 auto;
 }
 
-/*________________________________formulaire ______________________________*/
-.left_band{
-  width: 250px;
+/*________________________________Left_menu______________________________*/
+
+ul{
+  list-style-type: none;
+  width: 15%;
+  height:300px;
   margin-top: 10px;
-  margin-right: -100px;
-  display: flex;
-  flex-direction: column;
-  
+  margin-right: 0;
+  position: fixed;
+  overflow: auto;
+  padding-left: 8px;
 }
 
 
-.left_band>a{
-  
-  font-size: 1.5em;
+li a{
+  display: block;
+  text-decoration: none;
+  text-justify: auto;
+  /* padding: 3px; */
+  font-size: calc(0.1em + 1.2vw);
+  min-block-size:30px ;
   font-weight: 600;
   line-height: 1.5em;
-  width:20px;
   color:#78788c;
-  border-bottom:3px solid #78788c
+  border-bottom:3px solid #78788c; 
+  max-width: 100vb;
+}
+
+
+li a:hover{
+  transition: all 0.2s ease-in-out;
+  color:#f0a400;
   
 }
 
-.left_band>a:hover{
-  transition: all 0.2s ease-in-out;
-  background-color:#f6ae2c;
-}
 
+/*________________________________forms______________________________*/
 .bandeau{
   height:1100px;
-  margin-top: -200px;
+  margin-top: 60px;  
   margin-bottom: 50px;
   background:#ffffff;
   margin-left: auto;
@@ -89,7 +99,7 @@ h2{margin:10px 0;
   padding-bottom:10px;
   width:180px;
   color:#78788c;
-  border-bottom:3px solid #78788c
+  border-bottom:3px solid #f6ae2c;
 }
 
 input{
@@ -114,7 +124,8 @@ input{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 256px;
+  width: calc(20vw - 50px);
+  min-width: 100px;
   height: 64px;
   /* margin-top: 20px;
   margin-right: -80px; */
@@ -137,15 +148,20 @@ input{
   margin:auto calc(10vh - 220px); 
 }
 
+.info_content{
+  width: 45vw ;
+}
+
 .steps{
   margin-top: 200px;
   margin-left:calc(10vw + 170px);
+  margin-right: auto;
   width: 30%;
 }
 
 .steps>h2{
   width: 100%;
-  border-bottom:3px solid #78788c
+  border-bottom:3px solid #f6ae2c;
 }
 
 p{
@@ -155,4 +171,5 @@ p{
 .footer{
   justify-content: center;
   margin: 0 auto;
+  padding: 8px;
 }
