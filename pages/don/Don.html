@@ -36,7 +36,7 @@
       </div>
     </header>
     <main>
-      <div class="premier">
+      <form class="premier">
         <h1 class="Titre1">Nous faire un don :</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
@@ -44,8 +44,8 @@
         </p>
         <div class="Don">
           <input
-            class="montant"
-            name="montant"
+            class="input"
+            name="amount"
             placeholder="Montant"
             type="text"
           />
@@ -54,39 +54,39 @@
         <h2 class="Titre2">Carte :</h2>
         <div class="carte">
           <input
-            class="Numéro_carte"
-            name="Numéro de carte"
+            class="input long_input"
+            name="card_number"
             placeholder="Numéro de carte"
             type="text"
           />
           <div class="card-row">
             <input
-              class="NOM"
-              name="NOM"
+              class="input long_input"
+              name="lastname"
               placeholder="Titulaire"
               type="text"
             />
 
             <input
-              class="Expiration"
-              name="Expiration "
-              placeholder="Expiration: Mois / Année"
+              class="input half_input"
+              name="expiration_date "
+              placeholder="MM/AAAA"
               type="text"
             />
           </div>
           <div class="card-row2">
             <input
-            class="CVC"
-            name=" CVC"
-            placeholder="CVC"
-            type="text"
+              class="input small_input"
+              name="cvc"
+              placeholder="CVC"
+              type="text"
             />
           </div>
-          <div class="DON">
-            <a href="#" class="bouton">DON</a>
+          <div class="donate">
+            <button type="submit" class="bouton">Donner</button>
           </div>
         </div>
-      </div>
+      </form>
     </main>
   </body>
 </html>

@@ -73,34 +73,41 @@
 
 .main {
   box-shadow: 0 -8px 80px rgba(0, 0, 0, 0.5);
-
-  background-color: white;
+  background-color: #fff;
   margin-top: 100vh;
 }
 
 .main-content {
+  background-color: white;
   min-height: 100vh;
-  width: 70%;
-  padding: 80px;
+  width: max(300px, 70%);
+  padding: 160px 0;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  column-gap: 80px;
 }
 
 .content {
-  width: 65%;
+  flex: 1;
+  min-width: 330px;
+  max-width: 800px;
 }
 
 .section-title {
+  margin-top: 0;
   font-size: 1.75em;
 }
 
 .illustration {
   width: 30%;
+  margin-top: 40px;
+  min-width: 330px;
   height: auto;
 }
 
@@ -114,19 +121,23 @@ p {
 }
 
 .founderRow {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 64px;
+  align-items: center;
+  justify-content: space-evenly;
   padding-top: 80px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .founderCard {
+  padding: 16px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px;
-  width: 30%;
+  width: 300px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
   height: auto;
   border-radius: 15px;
   transition: all 0.2s ease;
@@ -138,7 +149,7 @@ p {
 }
 
 .card2 {
-  transform: translateY(-56px);
+  /* transform: translateY(-56px); */
 }
 
 .founderCard img {

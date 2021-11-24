@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produit</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="../../index.html">Bele</a>
+      <nav class="headerNav">
+        <a href="../../index.html" class="link">Accueil</a>
+        <a href="../buy/buy.html" class="link">Vente/Location</a>
+        <a href="../sell.html" class="link">Revente</a>
+      </nav>
+      <a class="cart" href="../cart/cart.html">
+        <img src="../../images/icons/cart.svg" />
+      </a>
+
+      <div class="mobile">
+        <label for="toggleNav" class="hamburger">
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+        </label>
+        <input type="checkbox" id="toggleNav" />
+        <nav class="mobileNav">
+          <a href="../../index.html" class="link">Accueil</a>
+          <a href="../buy/buy.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <div class="product">
+        <img class="product_img" src="../../images/books/book1.jpg" />
+        <div class="product_info">
+          <div class="product_info_top">
+            <h1 class="product_title">TOEIC 200%</h1>
+            <span class="product_attribute">Editeur : Ellipses</span>
+            <span class="product_attribute">Année : 2017</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus perspiciatis animi aliquid adipisci obcaecati
+              deleniti id vitae beatae repellat qui magni recusandae maxime
+              quis, perferendis expedita fugiat vel ullam, aliquam sint! Dolores
+              voluptatum ex aliquid rerum officia doloremque eius praesentium,
+              perspiciatis repellat, nemo, tempore quae. Fuga quam optio nemo
+              maxime consequatur non totam illo dolorem dolore.
+            </p>
+          </div>
+          <div class="product_info_bottom">
+            <div class="type_of_booking">
+              <label class="option_selection selected" id="buy_label">
+                <input
+                  type="radio"
+                  name="type_of_booking"
+                  value="buying"
+                  id="buy_input"
+                  checked
+                />
+                <div class="option_text">
+                  <span>Achat</span>
+                  <span>45€</span>
+                </div>
+              </label>
+              <label class="option_selection" id="rent_label">
+                <input
+                  type="radio"
+                  id="rent_input"
+                  name="type_of_booking"
+                  value="renting"
+                />
+                <div class="option_text">
+                  <span>Location</span>
+                  <span>5€ / mois</span>
+                </div>
+              </label>
+            </div>
+            <a href="../cart/cart.html" class="add_to_cart">
+              <span>Ajouter au panier</span>
+              <svg
+                width="24"
+                height="24"
+                view-box="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.70365 11.1018H8.74942"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.5343 11.1018H14.5801"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let buylabel = document.getElementById("buy_label");
+      let rentlabel = document.getElementById("rent_label");
+
+      let buyInput = document.getElementById("buy_input");
+      let rentInput = document.getElementById("rent_input");
+
+      buyInput.addEventListener("change", () => {
+        if (buyInput.checked) {
+          buylabel.classList.add("selected");
+          rentlabel.classList.remove("selected");
+        } else {
+          buylabel.classList.remove("selected");
+          rentlabel.classList.add("selected");
+        }
+      });
+      rentInput.addEventListener("change", () => {
+        if (buyInput.checked) {
+          buylabel.classList.add("selected");
+          rentlabel.classList.remove("selected");
+        } else {
+          buylabel.classList.remove("selected");
+          rentlabel.classList.add("selected");
+        }
+      });
+    </script>
+  </body>
+</html>

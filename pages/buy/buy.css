@@ -46,22 +46,21 @@
 .searchBar {
   display: flex;
   height: 48px;
-  width: 33%;
+  width: 40%;
   margin: 0 auto 80px auto;
   border-radius: 16px;
   overflow: hidden;
   border: 3px solid #ececec;
-
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
 .searchBar * {
   outline: none;
   border: 0;
-  border-right: 2px solid #ffb412;
+  border-right: 3px solid #ffb412;
 }
 
-.searchBar select:last-child {
+.year {
   border: 0;
 }
 
@@ -75,8 +74,10 @@
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  justify-content: center;
   width: 65%;
   margin: auto;
 }
@@ -160,6 +161,27 @@
   height: 32px;
 }
 
+.search-button {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ffb412;
+  border: 0;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.search-button img {
+  margin: 0 !important;
+}
+.search-button:hover {
+  background-color: #f0a400;
+  transition: all ease 0.2s;
+}
+
 .add-to-cart {
   background-color: #ffb412;
   margin-right: 8px;
@@ -167,7 +189,7 @@
 
 .add-to-cart:hover {
   transition: all 0.2s ease-in-out;
-  background-color: hsl(41, 100%, 47%);
+  background-color: #f0a400;
 }
 .cart-icon {
   color: #fff;
