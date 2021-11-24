@@ -36,55 +36,46 @@
       </div>
     </header>
     <main>
-      <form class="premier">
-        <h1 class="Titre1">Nous faire un don :</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-          doloribus.
-        </p>
-        <div class="Don">
-          <input
-            class="input"
-            name="amount"
-            placeholder="Montant"
-            type="text"
-          />
-          <span class="ER">€</span>
-        </div>
+      <h1 class="Titre1">Nous faire un don :</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+        doloribus.
+      </p>
+      <form action="#" method="post" class="Don">
+        <input class="input" name="amount" placeholder="Montant" type="text" />
+        <span class="ER">€</span>
         <h2 class="Titre2">Carte :</h2>
-        <div class="carte">
+        <input
+          class="input long_input"
+          name="card_number"
+          placeholder="Numéro de carte"
+          type="text"
+        />
+        <div class="card-row">
           <input
             class="input long_input"
-            name="card_number"
-            placeholder="Numéro de carte"
+            name="lastname"
+            placeholder="Titulaire"
             type="text"
           />
-          <div class="card-row">
-            <input
-              class="input long_input"
-              name="lastname"
-              placeholder="Titulaire"
-              type="text"
-            />
 
-            <input
-              class="input half_input"
-              name="expiration_date "
-              placeholder="MM/AAAA"
-              type="text"
-            />
-          </div>
-          <div class="card-row2">
-            <input
-              class="input small_input"
-              name="cvc"
-              placeholder="CVC"
-              type="text"
-            />
-          </div>
-          <div class="donate">
-            <button type="submit" class="bouton">Donner</button>
-          </div>
+          <input
+            class="input half_input"
+            name="expiration_date "
+            placeholder="MM/AAAA"
+            type="text"
+          />
+        </div>
+        <div class="card-row2">
+          <input
+            class="input small_input"
+            name="cvc"
+            placeholder="CVC"
+            type="text"
+          />
+        </div>
+        <div class="donate">
+          <button type="submit" class="bouton">Donner</button>
         </div>
       </form>
     </main>
