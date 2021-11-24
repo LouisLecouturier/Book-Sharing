@@ -1,0 +1,138 @@
+/*_________________________________header______________________*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100px;
+}
+
+.formulaire {
+  border: #a8a8a8;
+  box-shadow: 0 8px 10px rgba(90, 90, 90, 0.1);
+  border-radius: 5px;
+  border: 2px solid;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.button {
+  margin: 0 auto;
+}
+
+/*________________________________Left_menu______________________________*/
+
+ul {
+  list-style-type: none;
+  width: 500px;
+  height: 300px;
+  margin-top: 10px;
+  margin-right: 0;
+  position: fixed;
+  padding-left: 16px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  font-size: calc(1em + 0.25vw);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+li a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #f0a400;
+}
+
+/*________________________________forms______________________________*/
+
+.form {
+  margin: 120px auto;
+  max-width: calc(100vw - 40px);
+  width: 50%;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 300px;
+  margin-bottom: 16px;
+}
+
+.form_group label {
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+h2 {
+  margin: 40px 0;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  width: fit-content;
+  font-weight: 800;
+  font-size: 1.6em;
+  border-bottom: 3px solid #f6ae2c;
+}
+
+input {
+  width: 100%;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 1.05em;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  /* border-bottom:2px solid #bebed2 */
+}
+
+.resell_button {
+  margin-top: 40px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #f6ae2c;
+  font-size: 1.2em;
+  font-family: "Karla";
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.button_forms:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #f0a400;
+}
+
+.info_content {
+  width: 45vw;
+}
+
+.footer {
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8px;
+}

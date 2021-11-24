@@ -95,7 +95,7 @@
 
 .content {
   flex: 1;
-  min-width: 330px;
+  min-width: 300px;
   max-width: 800px;
 }
 
@@ -107,7 +107,7 @@
 .illustration {
   width: 30%;
   margin-top: 40px;
-  min-width: 330px;
+  min-width: 300px;
   height: auto;
 }
 

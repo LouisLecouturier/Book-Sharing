@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="./resell.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <title>Revente</title>
+  </head>
+  <body>
+    <!--___________________________header_____________________________-->
+    <header class="header">
+      <a class="logo" href="../index.html">Bele</a>
+      <nav class="headerNav">
+        <a href="../index.html" class="link">Accueil</a>
+        <a href="../book.html" class="link">Vente/Location</a>
+        <a href="../sell.html" class="link">Revente</a>
+      </nav>
+      <a class="cart" href="../cart/cart.html">
+        <img src="../../../images/icons/cart.svg" />
+      </a>
+
+      <div class="mobile">
+        <label for="toggleNav" class="hamburger">
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+          <div class="hamburgerLine"></div>
+        </label>
+        <input type="checkbox" id="toggleNav" />
+        <nav class="mobileNav">
+          <a href="../index.html" class="link">Accueil</a>
+          <a href="../book.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--___________________main body_______________________________-->
+
+    <div class="page">
+      <ul class="nav">
+        <li><a href="#form" class="link">Informations du livre</a></li>
+        <li><a href="#calender" class="link">Créneaux disponibles</a></li>
+        <li><a href="#info" class="link">Démarches et Infos</a></li>
+      </ul>
+      <form class="form" method="post" action="#">
+        <h2>Votre livre :</h2>
+        <div class="form_group">
+          <label for="name">Nom du livre</label>
+          <input name="name" type="text" placeholder="Les Contemplations" />
+        </div>
+        <div class="form_group">
+          <label for="author">Auteur du livre</label>
+          <input name="author" type="text" placeholder="Victor Hugo" />
+        </div>
+        <div class="form_group">
+          <label for="editor">Nom de l'éditeur</label>
+          <input name="editor" type="text" placeholder="Belin-Galimard" />
+        </div>
+        <div class="form_group">
+          <label for="year">Année de parution</label>
+          <input name="name" type="number" maxlength="4" placeholder="1856" />
+        </div>
+        <div class="bottom">
+          <div class="steps">
+            <h2 id="info">Envoi et de Paiement :</h2>
+            <div class="info_content">
+              <p>démarche ici<br />et ici aussi</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+                pulvinar neque laoreet suspendisse interdum consectetur libero.
+                Sit amet porttitor eget dolor morbi. Sed arcu non odio euismod
+                lacinia at quis. Volutpat est velit egestas dui id ornare arcu.
+                Quis viverra nibh cras pulvinar mattis nunc sed blandit libero.
+                Congue mauris rhoncus aenean vel elit scelerisque mauris
+                pellentesque pulvinar. Risus quis varius quam quisque. Laoreet
+                id donec ultrices tincidunt arcu non. Lectus urna duis convallis
+                convallis tellus.
+              </p>
+            </div>
+          </div>
+
+          <div class="resell_button">
+            <button class="button_forms" type="submit">Vendre mon livre</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
