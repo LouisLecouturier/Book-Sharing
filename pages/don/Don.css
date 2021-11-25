@@ -1,9 +1,15 @@
+main {
+  width: 50%;
+  max-width: 400px;
+
+  margin: 120px auto 0 auto;
+}
 .premier {
-  height: calc(100vh - 64px);
-  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: calc(100vh - 64px);
+  width: fit-content;
   margin: 0 auto;
 }
 
@@ -12,11 +18,6 @@
   width: fit-content;
   font-weight: 800;
   padding-bottom: 4px;
-}
-
-main {
-  width: 75%;
-  margin: 64px auto 0 auto;
 }
 
 .Titre1::after {
@@ -30,6 +31,9 @@ main {
   border-radius: 100px;
 }
 
+.paragraph {
+  width: 100%;
+}
 .Titre2 {
   position: relative;
   width: fit-content;
@@ -60,12 +64,12 @@ main {
 
 .Don {
   display: flex;
+  flex-direction: column;
   position: relative;
-  width: fit-content;
-  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
   background-color: #fff !important;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 .carte {
@@ -86,21 +90,27 @@ main {
   border: 0;
 }
 
-.input {
+.amount {
+  position: relative;
   width: 100%;
-  height: 32px;
-  padding-left: 8px;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 1em;
   box-sizing: border-box;
   outline: 0;
   border: 0;
   border-radius: 10px;
-  border: 0;
   box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
 }
 
 .long_input {
   width: 100%;
-  min-width: 300px;
+  min-width: 200px;
 }
 .half_input {
   width: 50%;
@@ -109,11 +119,6 @@ main {
 .small_input {
   width: 25%;
   min-width: 125px;
-}
-
-.Don input {
-  box-shadow: inherit !important;
-  background-color: transparent;
 }
 
 .card-row2 {
@@ -137,7 +142,6 @@ main {
   font-size: 1.1em;
   height: 48px;
   transition: all 0.2s ease;
-
   cursor: pointer;
 }
 .bouton:hover {

@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>DON</title>
-    <link rel="stylesheet" href="./Don.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="./don.css" />
   </head>
   <body>
     <header class="header">
@@ -37,13 +37,20 @@
     </header>
     <main>
       <h1 class="Titre1">Nous faire un don :</h1>
-      <p>
+      <p class="paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
         doloribus.
       </p>
       <form action="#" method="post" class="Don">
-        <input class="input" name="amount" placeholder="Montant" type="text" />
-        <span class="ER">€</span>
+        <div class="amount">
+          <input
+            class="input"
+            name="amount"
+            placeholder="Montant"
+            type="text"
+          />
+          <span class="ER">€</span>
+        </div>
         <h2 class="Titre2">Carte :</h2>
         <input
           class="input long_input"
