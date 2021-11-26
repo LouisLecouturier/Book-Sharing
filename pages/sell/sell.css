@@ -1,6 +1,6 @@
 /*_________________________________header______________________*/
 
-.page a {
+.leftnav a {
   text-decoration: none;
   color: inherit;
   width: 100px;
@@ -99,6 +99,8 @@ input {
 
 .resell_button {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom {
@@ -110,7 +112,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 50%;
+  min-width: 240px;
   height: 56px;
   border-radius: 20px;
   background-color: #f6ae2c;
@@ -122,6 +125,7 @@ input {
   border: none;
   transition: all 0.2s ease-in-out;
 }
+
 .button_forms:hover {
   transition: all 0.2s ease-in-out;
   background-color: #f0a400;

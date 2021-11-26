@@ -20,6 +20,11 @@ a {
   min-height: calc(100vh - 64px);
 }
 
+.page_container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 hr {
   height: 4px;
   border: 0;

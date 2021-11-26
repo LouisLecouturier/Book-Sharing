@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="stylesheet" href="../../styles/header.css" />
-    <link rel="stylesheet" href="style/dycalendar.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../../../styles/header.css" />
+    <link rel="stylesheet" href="../../../styles/style.css" />
+    <link rel="stylesheet" href=" ./confirmation.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
+
+    <title>Confirmation de vente</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <a class="logo" href="../../index.html">Bele</a>
       <nav class="headerNav">
@@ -23,7 +24,7 @@
         <img src="../../images/icons/cart.svg" />
       </a>
 
-      <main class="mobile">
+      <div class="mobile">
         <label for="toggleNav" class="hamburger">
           <div class="hamburgerLine"></div>
           <div class="hamburgerLine"></div>
@@ -35,40 +36,22 @@
           <a href="../buy/buy.html" class="link">Vente/Location</a>
           <a href="../sell/sell.html" class="link">Revente</a>
         </nav>
-      </main>
+      </div>
     </header>
 
-    <main class="page">
-      <div class="page_container">
-        <div class="instructions">
-          <h1>
-            Veuillez sélectionner une date une heure le retrait pour votre
-            livre.
-          </h1>
-        </div>
-
-        <div class="all">
-          <div class="box">
-            <div class="container">
-              <a style="text-decoration: none"><div id="dycalendar"></div></a>
-            </div>
-            <div class="container2">
-              <div class="date">
-                <a href="../confirmation/buy.html"><p>9:00</p></a>
-                <a href="../confirmation/buy.html"><p>10:00</p></a>
-                <a href="../confirmation/buy.html"><p>11:00</p></a>
-                <a href="../confirmation/buy.html"><p>12:00</p></a>
-                <a href="../confirmation/sell.html"><p>14:00</p></a>
-                <a href="../confirmation/sell.html"><p>15:00</p></a>
-                <a href="../confirmation/sell.html"><p>16:00</p></a>
-                <a href="../confirmation/sell.html"><p>17:00</p></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!---main-->
+    <main class="main">
+      <h2>Votre vente a bien été prise en compte</h2>
+      <h3>Merci d'avoir utilisé notre service !</h3>
+      <div class="image">
+        <img src="../../images/illustrations/photolivre.png" />
       </div>
+      <button class="button" type="submit">
+        <a href="../../../index.html">Accueil</a>
+      </button>
     </main>
 
+    
     <footer class="footer">
       <div class="footer_left">
         <div class="logo">Bele</div>
@@ -97,16 +80,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/dycalendar.js"></script>
-    <script>
-      dycalendar.draw({
-        target: "#dycalendar",
-        type: "month",
-        dayformat: "full",
-        monthformat: "full",
-        hourformat: "full",
-        highlighttargetdate: true,
-      });
-    </script>
   </body>
 </html>

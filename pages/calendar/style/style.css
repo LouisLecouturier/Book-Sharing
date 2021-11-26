@@ -1,187 +1,163 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
-
-}
-.box{
-    position: relative;
-    display: flex;
-    z-index: 0;
+.box {
+  display: flex;
+  column-gap: 40px;
 }
 .instructions {
-    display: flex;
-    margin-top: 50px;
-    width: 1000px;
-    background-color: #fff;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 20px;
-    color: #111;
-    box-shadow: 0px 5px 45px rgba(0,0,0,0.1);
-    font-size: 1.2rem;
-
+  display: flex;
+  width: fit-content;
+  margin: 120px auto 40px auto;
+  box-sizing: border-box;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 16px 40px;
+  color: #111;
+  box-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
 }
 
-
-.ahah{
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
+.instructions h1 {
+  font-size: 1.4em;
 }
 
-
-   
-    
-
-section{
-    
-    background: #fff;
-    /*background: linear-gradient(to left, #f6ae2c, #FFC300);*/
+.inst section {
+  background: #fff;
+  /*background: linear-gradient(to left, #f6ae2c, #FFC300);*/
 }
-.all{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    
-    /*background: linear-gradient(to left, #f6ae2c, #FFC300);*/
+.all {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
+  /*background: linear-gradient(to left, #f6ae2c, #FFC300);*/
 }
 
-
-.container{
-    margin: 75px;
-    position: relative;
-    width: 400px;
-    min-height: 400px;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 45px rgba(0,0,0,0.1);
-    /*border: 1px solid gray;
+.container {
+  position: relative;
+  width: fit-content;
+  min-height: 400px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 45px rgba(0, 0, 0, 0.1);
+  /*border: 1px solid gray;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;*/
 }
 
 #dycalendar {
-    width: 100%;
-    padding: 20px;
-    text-decoration: none;
+  padding: 20px;
+  text-decoration: none;
 }
-#dycalendar table{
-    width: 100%;
-    margin-top: 40px;
-    border-spacing: 7px;
-
+#dycalendar table {
+  width: 100%;
+  margin-top: 40px;
+  border-spacing: 7px;
 }
 
-#dycalendar table tr:nth-child(1) td{
-    background-color: #f6ae2c;
-    color: #fff;
-    border-radius: 4px;
-    font-weight: 600;
-    
+#dycalendar table tr:nth-child(1) td {
+  background-color: #f6ae2c;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
 }
-#dycalendar table td{
-    color: #111;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-#dycalendar table td:hover{
-    background: #f6ae2c;
-    color: #fff !important;
-    font-weight: 900;
+#dycalendar table td {
+  color: #111;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-
-.dycalendar-target-date{
-    background: #f6ae2c !important;
-    color: #111 !important;
+#dycalendar table td:hover {
+  background: #f6ae2c;
+  color: #fff !important;
 }
 
-.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.prev-btn{
-    background: #fff;
-    color: #111;
-    width: 40px;
-    height: 38px;
-    left: 4px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+.dycalendar-target-date {
+  background: #f6ae2c !important;
+  color: #111 !important;
 }
 
-.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn{
-    background: #fff;
-    color: #111;
-    width: 40px;
-    height: 38px;
-    right: 4px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.prev-btn {
+  background: #fff;
+  color: #111;
+  width: 40px;
+  height: 38px;
+  left: 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
-.dycalendar-month-container .dycalendar-span-month-year{
-    color:#111;
-    font-weight: 600;
-    font-size: 1.5em;
-    padding-top: 1000px;
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.next-btn {
+  background: #fff;
+  color: #111;
+  width: 40px;
+  height: 38px;
+  right: 4px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
-.container2{
-    margin: 75px;
-    position: relative;
-    width: 200px;
-    min-height: 400px;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 45px rgba(0,0,0,0.1);
-    /*border: 1px solid gray;
+.dycalendar-month-container .dycalendar-span-month-year {
+  color: #111;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-top: 1000px;
+}
+
+.container2 {
+  /* margin: 75px; */
+  position: relative;
+  width: fit-content;
+  padding: 0 16px;
+  min-height: 400px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 45px rgba(0, 0, 0, 0.1);
+  /*border: 1px solid gray;
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;*/
 }
 
-.date{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.date {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.date a{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 72px;
-    height: 38px;
-    background: #fff;
-    border: 1px solid black;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    
-    font-size: 1.5rem;
-    margin-top:5px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    justify-content: center;
-    color: #111;
+.date a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 72px;
+  height: 38px;
+  background: #fff;
+  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); */
+
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  color: #111;
 }
-.date a:hover{
-    color: #fff;
-    font-weight: 1000;
-    justify-content: center;
-    font-size: 1.5rem;
-    background: #f6ae2c;
+.date a:hover {
+  color: #fff;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: #f6ae2c;
 }
