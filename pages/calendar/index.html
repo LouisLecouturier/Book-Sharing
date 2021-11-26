@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dycalendar.css">
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html">Bele</a>
+        <nav class="headerNav">
+          <a href="../index.html" class="link">Accueil</a>
+          <a href="../book.html" class="link">Vente/Location</a>
+          <a href="../sell.html" class="link">Revente</a>
+        </nav>
+        <a class="cart" href="../cart/cart.html">
+          <img src="img/cart.svg" />
+        </a>
+  
+        <div class="mobile">
+          <label for="toggleNav" class="hamburger">
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+          </label>
+          <input type="checkbox" id="toggleNav" />
+          <nav class="mobileNav">
+            <a href="../index.html" class="link">Accueil</a>
+            <a href="../book.html" class="link">Vente/Location</a>
+            <a href="../sell.html" class="link">Revente</a>
+          </nav>
+        </div>
+    </header>
+
+
+
+    
+    <section>
+      <div class="ahah">
+        <div class="instructions">
+          <h1>Veuillez selectionner une date une heure de retrait de votre livre.</h1>
+        </div>
+      </div>
+
+      <div class="all">
+      
+        <div class="box">
+            
+            <div class="container">
+                <a style="text-decoration: none"href=""><div id="dycalendar"></div></a>
+            </div>
+            <div class="container2">
+              <div class="date">
+                <a href=""><p>9:00</p></a>
+                <a href=""><p>10:00</p></a>
+                <a href=""><p>11:00</p></a>
+                <a href=""><p>12:00</p></a>
+                <a href=""><p>14:00</p></a>
+                <a href=""><p>15:00</p></a>
+                <a href=""><p>16:00</p></a>
+                <a href=""><p>17:00</p></a>
+
+              </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat:'full',
+            monthformat: 'full',
+            hourformat : 'full',
+            highlighttargetdate:true,
+            
+        })
+    </script>
+        
+
+</body>
+</html>
