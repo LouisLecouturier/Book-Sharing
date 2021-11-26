@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="buy.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
     <link rel="stylesheet" href="../../styles/style.css" />
     <title>Achat/Location</title>
   </head>
@@ -16,7 +17,7 @@
       <nav class="headerNav">
         <a href="../../index.html" class="link">Accueil</a>
         <a href="../buy/buy.html" class="link">Vente/Location</a>
-        <a href="../sell.html" class="link">Revente</a>
+        <a href="../sell/sell.html" class="link">Revente</a>
       </nav>
       <a class="cart" href="../cart/cart.html">
         <img src="../../images/icons/cart.svg" />
@@ -32,7 +33,7 @@
         <nav class="mobileNav">
           <a href="../../index.html" class="link">Accueil</a>
           <a href="../buy/buy.html" class="link">Vente/Location</a>
-          <a href="../sell.html" class="link">Revente</a>
+          <a href="../sell/sell.html" class="link">Revente</a>
         </nav>
       </div>
     </header>
@@ -100,7 +101,9 @@
 
       <div class="product-grid">
         <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
+          <a href="../product/product.html">
+            <img class="book-image" src="https://source.unsplash.com/random" />
+          </a>
           <div class="book-body">
             <h2 class="book-title">Livre 1</h2>
             <div class="book-info">
@@ -150,396 +153,11 @@
                 />
               </svg>
             </a>
-            <a href="#" class="see">
+            <a href="../product/product.html" class="see">
               <svg
                 width="24"
                 height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.75 11.7257L4.75 11.7257"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
-          <div class="book-body">
-            <h2 class="book-title">Livre 2</h2>
-            <div class="book-info">
-              <h4>Collection</h4>
-              <h4>Année</h4>
-            </div>
-          </div>
-          <div class="book-buttons">
-            <a class="add-to-cart" href="../cart/cart.html">
-              <svg
-                class="cart-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.70365 11.1018H8.74942"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.5343 11.1018H14.5801"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="see">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.75 11.7257L4.75 11.7257"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
-          <div class="book-body">
-            <h2 class="book-title">Livre 1</h2>
-            <div class="book-info">
-              <h4>Collection</h4>
-              <h4>Année</h4>
-            </div>
-          </div>
-          <div class="book-buttons">
-            <a class="add-to-cart" href="../cart/cart.html">
-              <svg
-                class="cart-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.70365 11.1018H8.74942"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.5343 11.1018H14.5801"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="see">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.75 11.7257L4.75 11.7257"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
-          <div class="book-body">
-            <h2 class="book-title">Livre 2</h2>
-            <div class="book-info">
-              <h4>Collection</h4>
-              <h4>Année</h4>
-            </div>
-          </div>
-          <div class="book-buttons">
-            <a class="add-to-cart" href="../cart/cart.html">
-              <svg
-                class="cart-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.70365 11.1018H8.74942"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.5343 11.1018H14.5801"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="see">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.75 11.7257L4.75 11.7257"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
-          <div class="book-body">
-            <h2 class="book-title">Livre 1</h2>
-            <div class="book-info">
-              <h4>Collection</h4>
-              <h4>Année</h4>
-            </div>
-          </div>
-          <div class="book-buttons">
-            <a class="add-to-cart" href="../cart/cart.html">
-              <svg
-                class="cart-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.70365 11.1018H8.74942"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.5343 11.1018H14.5801"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="see">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.75 11.7257L4.75 11.7257"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.7002 5.70131L19.7502 11.7253L13.7002 17.7503"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-        <article class="book">
-          <img class="book-image" src="https://source.unsplash.com/random" />
-          <div class="book-body">
-            <h2 class="book-title">Livre 2</h2>
-            <div class="book-info">
-              <h4>Collection</h4>
-              <h4>Année</h4>
-            </div>
-          </div>
-          <div class="book-buttons">
-            <a class="add-to-cart" href="../cart/cart.html">
-              <svg
-                class="cart-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.48626 21.5H15.8341C18.9004 21.5 21.2528 20.3924 20.5847 15.9348L19.8066 9.89357C19.3947 7.66931 17.976 6.81805 16.7311 6.81805H6.55262C5.28946 6.81805 3.95308 7.73339 3.4771 9.89357L2.69907 15.9348C2.13157 19.889 4.4199 21.5 7.48626 21.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.34896 6.59839C7.34896 4.21232 9.28325 2.27802 11.6693 2.27802V2.27802C12.8183 2.27315 13.9219 2.72618 14.7361 3.53694C15.5503 4.34769 16.008 5.44938 16.008 6.59839V6.59839"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.70365 11.1018H8.74942"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.5343 11.1018H14.5801"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="see">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                viewbox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -563,6 +181,34 @@
         </article>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer_left">
+        <div class="logo">Bele</div>
+        <nav class="footer_nav">
+          <ul>
+            <li><a href="../../index.html">Accueil</a></li>
+            <li>
+              <a href="../buy/buy.html">Achat/Location</a>
+            </li>
+            <li><a href="../sell/sell.html">Revente</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer_right">
+        <nav>
+          <a href="../mentions_legales/mentions_legales.html"
+            >Mentions Légales</a
+          >
+          <a href="../404/404.html">Page 404</a>
+        </nav>
+        <div class="socials">
+          <a href="#"><img src="../../images/icons/facebook.svg" /></a>
+          <a href="#"><img src="../../images/icons/instagram.svg" /></a>
+          <a href="#"><img src="../../images/icons/twitter.svg" /></a>
+        </div>
+      </div>
+    </footer>
     <script>
       let rent = document.getElementById("rent");
       let actionSelected = document.getElementById("action-selected");

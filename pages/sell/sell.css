@@ -1,6 +1,6 @@
 /*_________________________________header______________________*/
 
-a {
+.page a {
   text-decoration: none;
   color: inherit;
   width: 100px;
@@ -22,7 +22,7 @@ a {
 
 /*________________________________Left_menu______________________________*/
 
-ul {
+.leftnav ul {
   list-style-type: none;
   width: 500px;
   height: 300px;
@@ -32,7 +32,7 @@ ul {
   padding-left: 16px;
 }
 
-li a {
+.leftnav li a {
   display: block;
   text-decoration: none;
   font-size: calc(1em + 0.25vw);
@@ -43,7 +43,7 @@ li a {
   border-bottom: 3px solid #78788c;
 }
 
-li a:hover {
+.leftnav li a:hover {
   transition: all 0.2s ease-in-out;
   color: #f0a400;
 }
@@ -78,7 +78,7 @@ h2 {
   width: fit-content;
   font-weight: 800;
   font-size: 1.6em;
-  border-bottom: 3px solid #f6ae2c;
+  border-bottom: 4px solid #f6ae2c;
 }
 
 input {
@@ -129,10 +129,4 @@ input {
 
 .info_content {
   width: 45vw;
-}
-
-.footer {
-  justify-content: center;
-  margin: 0 auto;
-  padding: 8px;
 }
