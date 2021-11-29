@@ -25,6 +25,11 @@
   font-weight: 800;
 }
 
+.logoImg {
+  height: 56px;
+  width: auto;
+}
+
 .cart {
   justify-content: flex-end;
 }
